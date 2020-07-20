@@ -16,8 +16,11 @@ FlexBe
 
 In src folder:
 sudo apt install ros-$ROS_DISTRO-flexbe-behavior-engine
+
 git clone https://github.com/FlexBE/flexbe_app.git
+
 catkin build
+
 source devel/setup.bash
 
 Install this Package:
