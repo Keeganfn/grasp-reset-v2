@@ -7,14 +7,14 @@ FlexBE Behavior Engine
 
 Install:
 
-Rosserial_arduino:
+Rosserial_arduino
+
 To set up rosserial_arduino it is easiest to follow the wiki:
 http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
 
-FlexBe:
+FlexBe
 
-In src:
-
+In src folder:
 sudo apt install ros-$ROS_DISTRO-flexbe-behavior-engine
 git clone https://github.com/FlexBE/flexbe_app.git
 catkin build
