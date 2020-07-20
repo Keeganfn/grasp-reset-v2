@@ -8,7 +8,7 @@
 ###########################################################
 
 from flexbe_core import Behavior, Autonomy, OperatableStateMachine, ConcurrencyContainer, PriorityContainer, Logger
-from flexbe_states.wait_state import WaitState
+from grasp_reset_flexbe_states.arm_control_state import Arm_Control_State_GR
 # Additional imports can be added inside the following tags
 # [MANUAL_IMPORT]
 
@@ -53,11 +53,11 @@ class Position_Behavior_GRSM(Behavior):
 
 
 		with _state_machine:
-			# x:127 y:99
-			OperatableStateMachine.add('Placeholder',
-										WaitState(wait_time=5),
-										transitions={'done': 'continue'},
-										autonomy={'done': Autonomy.Off})
+			# x:90 y:101
+			OperatableStateMachine.add('Arm_Control',
+										Arm_Control_State_GR(),
+										transitions={'continue': 'continue', 'failed': 'aborted'},
+										autonomy={'continue': Autonomy.Off, 'failed': Autonomy.Off})
 
 
 		return _state_machine

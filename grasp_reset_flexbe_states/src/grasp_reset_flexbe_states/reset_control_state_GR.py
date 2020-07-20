@@ -11,7 +11,7 @@ class Reset_Control_State_GR(EventState):
         the Data Control. If all trials are completed then it will loop back to Test control. Direction is
         used for determining a successful and unsuccseful outcome for testing purposed but will need to be
         replaced with a different measure of success once it becomes more fleshed out. 
-        TODO: More complex information for trials 
+        TODO: More complex information for trials, update info
 
         -- direction  int       TEMPORARY: Determines a succesful (1) or unsuccesful (0) outcome for testing purposes
 

@@ -72,13 +72,14 @@ class Grasp_Reset_System_BehaviorSM(Behavior):
 										self.use_behavior(Trial_Control_Behavior_GRSM, 'Trial_Control_Behavior_GR'),
 										transitions={'continue': 'Position_Behavior_GR', 'failed': 'failed', 'trials_complete': 'Test_Control_Behavior_GR'},
 										autonomy={'continue': Autonomy.Inherit, 'failed': Autonomy.Inherit, 'trials_complete': Autonomy.Inherit},
-										remapping={'number_of_trials': 'number_of_trials'})
+										remapping={'number_of_trials': 'number_of_trials', 'rotation': 'rotation'})
 
 			# x:651 y:396
 			OperatableStateMachine.add('Reset_Control_Behavior_GR',
 										self.use_behavior(Reset_Control_Behavior_GRSM, 'Reset_Control_Behavior_GR'),
 										transitions={'continue': 'Trial_Control_Behavior_GR', 'failed': 'failed'},
-										autonomy={'continue': Autonomy.Inherit, 'failed': Autonomy.Inherit})
+										autonomy={'continue': Autonomy.Inherit, 'failed': Autonomy.Inherit},
+										remapping={'rotation': 'rotation'})
 
 			# x:147 y:392
 			OperatableStateMachine.add('Position_Behavior_GR',
