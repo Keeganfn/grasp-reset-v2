@@ -53,7 +53,7 @@ Select Runtime Control -> Load Behavior -> Grasp_Reset_System_Behavior -> Runtim
 4a.) Make sure you are not getting any serial port errors in the terminal (if you are its most likely a problem with permissions) You should just see Behavior Mirror ready and Behavior engine ready in green.
 5.) Launch anything else that you need to run the experiment
 6.) Select Runtime Control -> Load Behavior -> Grasp_Reset_System_Behavior -> Runtime Control -> Enter number of trials -> Execute
-7.) The testbed will publish a 1 to the topic sim2real/reset_status that should signal for your arm sequence to befin. Once the testbed gets a message of 1 on the sim2real/reset topic it will begin its reset cycle. Once the testbed has completed its reset it will publish a 1 to the topic sim2real/reset_status again and the cycle will continue until the number of trials is reached.
+7.) The testbed will publish a 1 to the topic sim2real/reset_status that should signal for your arm sequence to begin. Once the testbed gets a message of 1 on the sim2real/reset topic it will begin its reset cycle. Once the testbed has completed its reset the cycle will continue until the number of trials is reached.
 
 Good luck!
 
