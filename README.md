@@ -1,4 +1,4 @@
-# grasp_reset_behaviors
+# grasp_reset_behaviors (OUTDATED DONT USE NEW PACKAGES BEING DEVELOPED IF YOU NEED TO USE IT CONTACT ME)
 ## This repo contains all grasp_reset-specific states and behaviors.
 
 ### Dependencies: 
